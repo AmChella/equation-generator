@@ -1,0 +1,20 @@
+library: /euclid
+mml_mo_mfenced_process: /usr/bin/java -jar {{library}}/saxon9.jar -o {{output}} {{input}} {{library}}/math.xsl
+mml_pre_process: /usr/bin/java -jar {{library}}/saxon9.jar -o {{output}} {{input}} {{library}}/preprocess.xsl
+mml_sanitize_process: /usr/bin/java -jar {{library}}/saxon9.jar -o {{output}} {{input}} {{library}}/sanitizer.xsl
+mml_to_tex: /usr/bin/java -jar {{library}}/saxon9.jar -o {{output}} {{input}} {{library}}/pmml2tex.xsl {{displayType}} {{maxWidth}} {{fontSize}} {{leading}} {{fontFamily}}
+data_path: /euclid
+app_log: /logs/app.log
+default_ouput: svg
+tex_to_pdf: cd /euclid && /usr/bin/pdflatex -halt-on-error --output-directory=/euclid {{input}} --output-format=pdf
+crop_pdf: /usr/bin/pdfcrop {{input_pdf}} {{output_pdf}}
+pdf_to_svg: /usr/bin/pdf2svg {{input}} {{output}}
+tex_container: app/Tnq/Euclid/Config/container.tex
+processing_time: 1800
+math_to_html: java -jar {{library}}/saxon9.jar -o {{output}} {{input}} {{library}}/reducemml.xsl
+math_to_mathjax_html: node /usr/local/lib/node_modules/mathjax-node-cli/bin/mml2htmlcss --linebreaks=false '{{{input}}}' > {{output}}
+html_to_pdf: node /usr/local/lib/node_modules/html-pdf/bin/index.js {{input}} {{output}}
+fontFamily:
+    times_new_roman: ptn
+    charissil: cha
+    stix: stix

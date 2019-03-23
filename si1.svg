@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16pt" height="12pt" viewBox="0 0 16 12" version="1.1">
+<defs>
+<image id="image7" width="14" height="11" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAAAAABq7uO+AAAAAmJLR0QA/4ePzL8AAAAfSURBVAiZY2T4z4AAjEwMKIASLgOyyf9J08uCopkBADy0BBP4Jj+jAAAAAElFTkSuQmCC"/>
+<mask id="mask0">
+<use xlink:href="#image7"/>
+</mask>
+<image id="image6" width="14" height="11" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAIAAADA5ys1AAAABmJLR0QA/wD/AP+gvaeTAAAAOElEQVQYlWP4//8/AxHg////TMSog4DBojQ+Pl5BQQEXCVHD+P//f0ZGRvzhAFEw4N5igbuGoFIAeQ8Wgb8dCSsAAAAASUVORK5CYII="/>
+</defs>
+<g id="surface1">
+<use xlink:href="#image6" mask="url(#mask0)" transform="matrix(1,0,0,1,1,0.802)"/>
+</g>
+</svg>

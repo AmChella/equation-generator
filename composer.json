@@ -1,0 +1,38 @@
+{
+    "name": "stipin/generation",
+    "authors": [
+        {
+            "name": "Chellapandi S",
+            "email": "chellapandi.s@tnqsoftware.co.in"
+        }
+    ],
+    "repositories": [
+        {
+           "type": "vcs",
+           "url": "http://git.tnq.co.in/page-central/euclid.git"
+        },
+        {
+           "type": "vcs",
+           "url": "http://git.tnq.co.in/common/routes.git"
+        },        
+        {
+            "type": "vcs",
+            "url": "http://git.tnq.co.in/common/http-api.git"
+        },
+        {
+            "type": "vcs",
+            "url": "http://git.tnq.co.in/common/queue.git"
+        }
+    ],
+    "require": {
+        "tnq/e-uclid": "v9.7.5"
+    },
+    "autoload": {
+        "psr-4": {
+          "SIGen\\": "app/"
+        }
+    },
+    "config": {
+        "secure-http": false
+    }
+}
